@@ -24,6 +24,7 @@ function vowelOne(s){
 * HTML(PUG)
 * CSS(SCSS)
 * JavaScript
+* BEM
 ## Language:
 English level - A2
 ## My pet project
