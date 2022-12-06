@@ -1,5 +1,4 @@
 # Vladimir Shumyakov
-===
 ## Contacts:
 * https://t.me/noisekov
 * E-mail:volodya_noise@mail.ru
@@ -21,5 +20,11 @@ function vowelOne(s){
 ## Education and courses:
 1. I'm self-taught
 2. Metalamp course selfeducation
+## Skills:
+* HTML(PUG)
+* CSS(SCSS)
+* JavaScript
 ## Language:
 English level - A2
+## My pet project
+[https://noisekov.github.io/Toxin/]
