@@ -37,9 +37,8 @@ function vowelOne(s){
 
 ## Language:
 English level - A2
----
 
 ## My Pet-project
-[Toxin-pug](https://noisekov.github.io/Toxin/)
-[Slider-class](https://noisekov.github.io/custom-slider/)
-[BMW-fetch](https://noisekov.github.io/test-fetch-vpn/)
+* [Toxin-pug](https://noisekov.github.io/Toxin/)
+* [Slider-class](https://noisekov.github.io/custom-slider/)
+* [BMW-fetch](https://noisekov.github.io/test-fetch-vpn/)
