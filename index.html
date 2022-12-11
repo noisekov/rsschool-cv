@@ -19,7 +19,7 @@
         <div class="header-wrapper">
           <div class="header__photo">
             <img
-              src="/rsschool-cv/assets/img/photo.jpg"
+              src="/assets/img/photo.jpg"
               alt="my photo"
               width="300"
               height="300"
@@ -29,16 +29,16 @@
             <nav class="nav">
               <ul class="nav__items">
                 <li class="nav__item">
-                  <a href="" class="nav__link">About me</a>
+                  <a href="#about" class="nav__link">About me</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Skills</a>
+                  <a href="#skills" class="nav__link">Skills</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Example code</a>
+                  <a href="#code" class="nav__link">Code example</a>
                 </li>
                 <li class="nav__item">
-                  <a href="" class="nav__link">Projects</a>
+                  <a href="#project" class="nav__link">Projects</a>
                 </li>
               </ul>
             </nav>
@@ -54,7 +54,7 @@
                   E-mail: <a class="contacts__link" href="mailto:volodya_noise@mail.ru">volodya_noise@mail.ru</a> 
                 </li>
                 <li class="contacts__item">
-                  Discord: noisekov
+                  Discord: noisekov#4291
                 </li>
                 <li class="contacts__item">
                   Github: <a class="contacts__link" href="https://github.com/noisekov">https://github.com/noisekov</a> 
@@ -66,8 +66,105 @@
       </div>
     </header>
     <main class="main">
-      <div class="container">
-        <h1>Als</h1>
+      <div class="container mb10">
+        <section class="about-me wrapper" id="about">
+          <h2>About me</h2>
+          <p>I love traveling and learn new things, in this year i began to learn 
+            frontend you can look my pet-projects, now i began to learn this with 
+            RS School. I'm ex railway driver and cnc engineer. Now i work in small company 
+            in Saint-Petersbutg and create simple sites but i want to work in big company,
+            communicate with designer, analitics, work with git and big projects. I 
+            learning English language every week.
+          </p>
+        </section>
+      </div>
+      <div class="container mb10">
+        <section class="skills wrapper" id="skills">
+          <h2>Skills</h2>
+          <ul class="skills__items">
+            <li class="skills__item">HTML(PUG)</li>
+            <li class="skills__item">CSS(SCSS)</li>
+            <li class="skills__item">JavaScript (Alpine.js a little)</li>
+            <li class="skills__item">BEM, UI-Kit, Pixel Perfect</li>
+            <li class="skills__item">Webpack, Gulp, Parcel</li>
+            <li class="skills__item">Git, Github</li>
+            <li class="skills__item">Figma</li>
+            <li class="skills__item">Refactoring, work with legacy code</li>
+            <li class="skills__item">Restoring a site using webarchive</li>
+            <li class="skills__item">Regular expressions</li>
+          </ul>
+        </section>
+      </div>
+      <div class="container mb10">
+        <section class="code wrapper" id="code">
+          <h2>Code example</h2>
+          <pre>
+            <code>
+              function vowelOne(s){
+                  const smallLetter = s.toLowerCase()
+                  const arr = ['a','e','i','o','u'];
+                  const newArray = smallLetter.split('').map(x => arr.includes(x)).join('');
+                  const result = newArray.replace(/true/g, 1);
+                  return result.replace(/false/g, 0);
+              }
+            </code>
+          </pre>
+        </section>
+      </div>
+      <div class="container mb10">
+        <section class="projects wrapper" id="project">
+          <h2>Projects</h2>
+          <ol class="projects__items">
+            <li class="projects__item">
+              <a href="https://3d.mebelesd.ru/" class="projects__link">Calc furniture</a>
+              (Calc for shop, my project on work. I added responsive,<br>
+              change design using Tilda maket, change logic buttons and<br>
+              added new blocks (table photo, popup, pedestal accessories, hook block in up elements etc.))
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/Toxin/" class="projects__link">Hotel</a>
+              (Analog AirBnb, Use PUG)
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/test-fetch-vpn/" class="projects__link">Slider + Request</a>
+              (Fetch request for vpn server)
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/custom-slider/" class="projects__link">Custom-slider</a>
+              (Custom-slider with div, i use class in code)
+            </li>
+            <li class="projects__item">
+              <a href="https://yuristi-online.ru/" class="projects__link">Site for advocat</a>
+              (Simple site)
+            </li>
+            <li class="projects__item">
+              <a href="https://business-advokat.ru/" class="projects__link">Site for advocat 2</a>
+              (Simple site)
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/msk/" class="projects__link">Calc + Table layout</a>
+              (Table layout and small calc, pixel perfect)
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/theme/" class="projects__link">Theme page</a>
+              (Change theme dark/light and save params when reload page)
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/taskWebEnergy_40/" class="projects__link">Shop</a>
+              (Old project)
+            </li>
+          </ol>
+        </section>
+      </div>
+      <div class="container mb10">
+        <section class="education wrapper">
+          <h2>Education</h2>
+          <ul>
+            <li>OMGUPS 2013-2018 Railawy Engineer</li>
+            <li>2022 HTML Academy free course</li>
+            <li>2022 RS School in progress</li>
+          </ul>
+        </section>
       </div>
     </main>
     <footer class="footer">
