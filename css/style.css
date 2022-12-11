@@ -109,4 +109,18 @@ h2 {
     color: #000;
     font-size: 18px;
 }
-.footer {}
+.projects__link:hover {
+    text-decoration: none;
+}
+.language__item {
+    list-style-type: circle;
+}
+.footer__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+.footer__text {
+    font-size: 20px;
+}
