@@ -1,13 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-    <body>
-        <h1>Hello RS School</h1>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header__photo">
+            <img
+              src="/assets/img/photo.jpg"
+              alt="my photo"
+              width="300"
+              height="300"
+            />
+          </div>
+          <div class="header__block">
+            <nav class="nav">
+              <ul class="nav__items">
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">About me</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#code" class="nav__link">Code example</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#project" class="nav__link">Projects</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#education" class="nav__link">Education</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#language" class="nav__link">Language</a>
+                </li>
+              </ul>
+            </nav>
+            <section class="header__name">
+              <h1>Vladimir Shumyakov</h1>
+            </section>
+            <div class="contacts">
+              <ul class="contacts__items">
+                <li class="contacts__item">
+                  Telegram: @noisekov
+                </li>
+                <li class="contacts__item">
+                  E-mail: <a class="contacts__link" href="mailto:volodya_noise@mail.ru">volodya_noise@mail.ru</a> 
+                </li>
+                <li class="contacts__item">
+                  Discord: noisekov#4291
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container mb10">
+        <section class="about-me wrapper" id="about">
+          <h2>About me</h2>
+          <p>I love traveling and learning new things, in this year i began to learn 
+            frontend you can look my pet-projects.<br>
+            I'm ex railway driver and cnc engineer.<br> 
+            Now i work in small company in Saint-Petersbutg and create simple sites but i want to work in big company,
+            communicate with designer, analitics, work with big projects.<br>
+            I learning English language every week.
+          </p>
+        </section>
+      </div>
+      <div class="container mb10">
+        <section class="skills wrapper" id="skills">
+          <h2>Skills</h2>
+          <ul class="skills__items">
+            <li class="skills__item">HTML(PUG)</li>
+            <li class="skills__item">CSS(SCSS)</li>
+            <li class="skills__item">JavaScript (Alpine.js a little)</li>
+            <li class="skills__item">BEM, UI-Kit, Pixel Perfect</li>
+            <li class="skills__item">Webpack, Gulp, Parcel</li>
+            <li class="skills__item">Git, Github</li>
+            <li class="skills__item">Figma</li>
+            <li class="skills__item">Refactoring, work with legacy code</li>
+            <li class="skills__item">Restoring a site using webarchive</li>
+            <li class="skills__item">Regular expressions</li>
+          </ul>
+        </section>
+      </div>
+      <div class="container mb10">
+        <section class="code wrapper" id="code">
+          <h2>Code example</h2>
+          <pre>
+            <code>
+              function vowelOne(s){
+                  const smallLetter = s.toLowerCase()
+                  const arr = ['a','e','i','o','u'];
+                  const newArray = smallLetter.split('').map(x => arr.includes(x)).join('');
+                  const result = newArray.replace(/true/g, 1);
+                  return result.replace(/false/g, 0);
+              }
+            </code>
+          </pre>
+        </section>
+      </div>
+      <div class="container mb10">
+        <section class="projects wrapper" id="project">
+          <h2>Projects</h2>
+          <ol class="projects__items">
+            <li class="projects__item">
+              <a href="https://3d.mebelesd.ru/" class="projects__link">Calc furniture</a>
+              (Calc for shop, my project on work. I added responsive,<br>
+              change design using Tilda maket, change logic buttons and<br>
+              added new blocks (table photo, popup, pedestal accessories, hook block in up elements etc.))
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/Toxin/" class="projects__link">Hotel</a>
+              (Analog AirBnb, Use PUG)
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/test-fetch-vpn/" class="projects__link">Slider + Request</a>
+              (Fetch request for vpn server)
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/custom-slider/" class="projects__link">Custom-slider</a>
+              (Custom-slider with div, i use class in code)
+            </li>
+            <li class="projects__item">
+              <a href="https://yuristi-online.ru/" class="projects__link">Site for advocat</a>
+              (Simple site)
+            </li>
+            <li class="projects__item">
+              <a href="https://business-advokat.ru/" class="projects__link">Site for advocat 2</a>
+              (Simple site)
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/msk/" class="projects__link">Calc + Table layout</a>
+              (Table layout and small calc, pixel perfect)
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/theme/" class="projects__link">Theme page</a>
+              (Change theme dark/light and save params when reload page)
+            </li>
+            <li class="projects__item">
+              <a href="https://noisekov.github.io/taskWebEnergy_40/" class="projects__link">Shop</a>
+              (Old project)
+            </li>
+          </ol>
+        </section>
+      </div>
+      <div class="container mb10" >
+        <section class="education wrapper" id="education">
+          <h2>Education</h2>
+          <ul>
+            <li>OMGUPS 2013-2018 Railawy Engineer</li>
+            <li>2022 HTML Academy free course</li>
+            <li>2022 RS School in progress</li>
+          </ul>
+        </section>
+      </div>
+      <div class="container mb10">
+        <section class="language wrapper" id="language">
+          <h2>Language</h2>
+          <ul class="language__items">
+            <li class="language__item">Russian - Native</li>
+            <li class="language__item">English - A2</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__block">
+          <a href="https://github.com/noisekov" target="_blank">
+            <svg height="50" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="50" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+          </a>
+          <a href="https://rs.school/js/" target="_blank">
+            <img src="/assets/img/rs_school.svg" alt="rsschool">
+          </a>
+          <p class="footer__text">
+            Created in 2022
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
