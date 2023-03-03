@@ -41,7 +41,10 @@ h2 {
     margin: 5px 0;
 }
 .header {
-    margin: 10px 0;
+    margin: 10px;
+}
+.main {
+    margin: 0 10px;
 }
 .header-wrapper {
     display: flex;
@@ -137,6 +140,9 @@ h2 {
 }
 .language__item {
     list-style-type: circle;
+}
+.footer {
+    margin: 0 10px 10px;
 }
 .footer__block {
     display: flex;
