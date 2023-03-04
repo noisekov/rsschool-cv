@@ -152,3 +152,9 @@ h2 {
 .footer__text {
     font-size: 20px;
 }
+.education ul a {
+    color: inherit;
+}
+.education ul a:hover {
+    text-decoration: none;
+}
