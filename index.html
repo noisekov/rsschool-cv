@@ -75,8 +75,7 @@
           <p>I love traveling and learning new things, i began to learn 
             frontend in last year, you can look my pet-projects.<br>
             I'm ex a railway driver and cnc engineer.<br> 
-            Now i work in small company in Saint-Petersbutg and create simple sites but i want to work in big company,
-            communicate with designer, and working with big projects.<br>
+            Now i work in small company in Saint-Petersbutg and create simple sites but i want to work in a big company and working with big projects.<br>
             I learning English language every day.
           </p>
         </section>
@@ -105,12 +104,13 @@
           <h2>Code example</h2>
           <pre>
             <code>
-              function vowelOne(s){
-                  const smallLetter = s.toLowerCase()
-                  const arr = ['a','e','i','o','u'];
-                  const newArray = smallLetter.split('').map(x => arr.includes(x)).join('');
-                  const result = newArray.replace(/true/g, 1);
-                  return result.replace(/false/g, 0);
+              function strCount(obj) {
+                let countString = 0;
+                  for (let elem in obj) {
+                    if (typeof obj[elem] === 'object') countString += strCount(obj[elem]);
+                    if (typeof obj[elem] === 'string') countString++;
+                }
+                return countString
               }
             </code>
           </pre>
