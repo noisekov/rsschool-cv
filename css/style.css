@@ -38,7 +38,7 @@ code {
     color: #fff;
 }
 h2 {
-    margin: 5px 0;
+    margin: 0;
 }
 .header {
     margin: 10px;
@@ -138,6 +138,30 @@ h2 {
 .projects__link:hover {
     text-decoration: none;
 }
+.projects__items {
+    padding-left: 20px;
+    margin: 0;
+}
+.projects__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+@media (max-width:600px) {
+    .projects__wrap {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+.projects__title {
+    padding-left: 20px;
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+    color: #999;
+}
+.language__items {
+    padding-left: 20px;
+}
 .language__item {
     list-style-type: circle;
 }
@@ -157,6 +181,9 @@ h2 {
 }
 .footer__text {
     font-size: 20px;
+}
+.education__items {
+    padding-left: 20px;
 }
 .education ul a {
     color: inherit;

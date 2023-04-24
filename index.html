@@ -65,8 +65,8 @@
         <section class="about-me wrapper" id="about">
           <h2>About me</h2>
           <p>
-            I love to learning new things, i began to learn frontend last year, you can look my pet-projects.<br>
-            I'm ex a railway driver and cnc engineer.<br> Now i work in small company in Saint-Petersbutg and create simple sites but i'd like to work in a big company and work with big projects.<br>
+            I love learning new things, i began to learn frontend last year, you can look my pet-projects.<br>
+            I'm ex a railway driver and engineer.<br> Now i'm working to a small company in Saint-Petersbutg and create simple sites but i'd like to work in a big company and work with big projects.<br>
             I'm learning English language every day.</p>
         </section>
       </div>
@@ -100,7 +100,7 @@
                     if (typeof obj[elem] === 'object') countString += strCount(obj[elem]);
                     if (typeof obj[elem] === 'string') countString++;
                 }
-                return countString
+                return countString;
               }
             </code>
           </pre>
@@ -109,66 +109,74 @@
       <div class="container mb10">
         <section class="projects wrapper" id="project">
           <h2>Projects</h2>
-          <ol class="projects__items">
-            <li class="projects__item">
-              <a href="https://kaweb.ru/" class="projects__link">Topar</a>
-              (My project at work, simple site AOS, fancybox)
-            </li>
-            <li class="projects__item">
-              <a href="https://noisekov.github.io/momentum/" class="projects__link">Momentum</a>
-              (My study a work)
-            </li>
-            <li class="projects__item">
-              <a href="https://3d.mebelesd.ru/" class="projects__link">Calc furniture</a>
-              (My project at work)
-            </li>
-            <li class="projects__item">
-              <a href="https://noisekov.github.io/Toxin/" class="projects__link">Hotel</a>
-              (Analog AirBnb, I used PUG, pixel perfect)
-            </li>
-            <li class="projects__item">
-              <a href="https://zakazat-tral.ru/" class="projects__link">Tral-mash</a>
-              (My project at work, simple site)
-            </li>
-            <li class="projects__item">
-              <a href="https://noisekov.github.io/test-fetch-vpn/" class="projects__link">Slider + Request</a>
-              (Fetch request for VPN server)
-            </li>
-            <li class="projects__item">
-              <a href="https://yuristi-online.ru/" class="projects__link">Site for advocat</a>
-              (My project at work)
-            </li>
-            <li class="projects__item">
-              <a href="https://business-advokat.ru/" class="projects__link">Site for advocat 2</a>
-              (My project at work)
-            </li>
-            <li class="projects__item">
-              <a href="https://spbc.ru/" class="projects__link">Site for coach</a>
-              (My project at work)
-            </li>
-            <li class="projects__item">
-              <a href="https://noisekov.github.io/msk/" class="projects__link">Calc + Table layout</a>
-              (Table layout and small calc, pixel perfect)
-            </li>
-            <li class="projects__item">
-              <a href="https://noisekov.github.io/custom-slider/" class="projects__link">Custom-slider</a>
-              (Custom-slider, I used class in code)
-            </li>
-            <li class="projects__item">
-              <a href="https://noisekov.github.io/test-validation-from/" class="projects__link">Validation form</a>
-              (Validate form, pixel perfect)
-            </li>
-            <li class="projects__item">
-              <a href="https://noisekov.github.io/studySitePlantsRSSchool/" class="projects__link">Plants</a>
-              (My study a work, pixel perfect)
-            </li>
-          </ol>
+          <div class="projects__wrap">
+            <div class="projects__work">
+              <p class="projects__title">Work</p>
+              <ol class="projects__items">
+                <li class="projects__item">
+                  <a href="https://kaweb.ru/" class="projects__link" target="_blank">Topar</a>
+                  (AOS, fancybox)
+                </li>
+                <li class="projects__item">
+                  <a href="https://3d.mebelesd.ru/" class="projects__link" target="_blank">Calc furniture</a>
+                  (alpine.js)
+                </li>
+                <li class="projects__item">
+                  <a href="https://zakazat-tral.ru/" class="projects__link" target="_blank">Tral-mash</a>
+                  (Glide.js, noUI Slider, airdatepicker, fancybox)
+                </li>
+                <li class="projects__item">
+                  <a href="https://yuristi-online.ru/" class="projects__link" target="_blank">Site for advocat</a>
+                </li>
+                <li class="projects__item">
+                  <a href="https://business-advokat.ru/" class="projects__link" target="_blank">Site for advocat 2</a>
+                </li>
+                <li class="projects__item">
+                  <a href="https://spbc.ru/" class="projects__link" target="_blank">Site for coach</a>
+                  (slick(jq), mansory, Fancybox)
+                </li>
+              </ol>
+            </div>
+            <div class="projects__my">
+              <p class="projects__title">Home</p>
+              <ol class="projects__items">
+                <li class="projects__item">
+                  <a href="https://noisekov.github.io/momentum/" class="projects__link" target="_blank">Momentum</a>
+                  (ToDo + audioplayer + api weather)
+                </li>
+                <li class="projects__item">
+                  <a href="https://noisekov.github.io/Toxin/" class="projects__link" target="_blank">Hotel</a>
+                  (Analog AirBnb, I used PUG, pixel perfect)
+                </li>
+                <li class="projects__item">
+                  <a href="https://noisekov.github.io/studySitePlantsRSSchool/" class="projects__link" target="_blank">Plants</a>
+                  (pixel perfect)
+                </li>
+                <li class="projects__item">
+                  <a href="https://noisekov.github.io/test-fetch-vpn/" class="projects__link" target="_blank">Fetch + VPN + Slider</a>
+                  (Swiper.js)
+                </li>
+                <li class="projects__item">
+                  <a href="https://noisekov.github.io/msk/" class="projects__link" target="_blank">Calc + Table layout</a>
+                  (pixel perfect)
+                </li>
+                <li class="projects__item">
+                  <a href="https://noisekov.github.io/custom-slider/" class="projects__link" target="_blank">Custom-slider</a>
+                  (I used class in the code)
+                </li>
+                <li class="projects__item">
+                  <a href="https://noisekov.github.io/test-validation-from/" class="projects__link" target="_blank">Validation form</a>
+                  (pixel perfect)
+                </li>
+              </ol>
+            </div>
+          </div>
         </section>
       </div>
       <div class="container mb10" >
         <section class="education wrapper" id="education">
           <h2>Education</h2>
-          <ul>
+          <ul class="education__items">
             <li>OMGUPS 2013-2018 Railawy Engineer</li>
             <li><a href="https://pythontutor.ru/">Tried to pass pythontutor in 2021</a></li>
             <li>2022 HTML Academy free course</li>
