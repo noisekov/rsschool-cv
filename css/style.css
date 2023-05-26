@@ -148,11 +148,20 @@ h2 {
     margin-bottom: 10px;
 }
 @media (max-width:600px) {
+  
     .projects__wrap {
         justify-content: flex-start;
         flex-direction: column;
     }
+  
 }
+
+.about-me a {
+    margin-top: 10px;
+    display: inline-block;
+    color: deeppink;
+}
+
 .projects__title {
     padding-left: 20px;
     font-size: 18px;
